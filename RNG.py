@@ -41,3 +41,4 @@ class ClassRanGen(object):
         #print("updatedSeed=",self.seed)
         # print("Rand_Number=",RanNo)
         return RanNo
+

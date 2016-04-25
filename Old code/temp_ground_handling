@@ -1,0 +1,85 @@
+class service(object):  # no instance of this class should be created
+
+    def __init__(self, typ, truck, human, time):
+        self.typ = typ
+        self.truck = truck
+        self.human = human
+        self.time = time
+
+    def service_print(self):
+            print('service Type: ' + str(self.typ))
+            print('truck: ' + str(self.truck))
+            print('human: ' + str(self.human))
+            print('time: ' + str(self.time))
+
+
+
+class Refuelservice(service):
+
+    def __init__(self, fuel_tank, *args):
+        self.fuel_tank = fuel_tank
+        service.__init__(self, *args)
+
+    def service_print(self):
+        service.service_print(self)
+        print('Fuel capacity (gallons): ' + str(self.fuel_tank))
+
+
+class Powerservice(service):
+
+    def __init__(self, energy_storage, *args):
+        self.energy_storage = energy_storage
+        service.__init__(self, *args)
+
+    def service_print(self):
+        service.service_print(self)
+        print('Energy Storage (Kwh): ' + str(self.energy_storage))
+
+class Cleaningservice(service):
+
+    def __init__(self, cleaning_team, *args):
+        self.cleaning_team = cleaning_team
+        service.__init__(self, *args)
+
+    def service_print(self):
+        service.service_print(self)
+        print('cleaning team(ppl): ' + str(self.cleaning_team))
+        
+class Waterservice(service):
+
+    def __init__(self, pump_storage, *args):
+        self.pump_storage = pump_storage
+        service.__init__(self, *args)
+
+    def service_print(self):
+        service.service_print(self)
+        print('pump storage (L): ' + str(self.pump_storage))  
+        
+class Cateringservice(service):
+
+    def __init__(self, food_storage, *args):
+        self.food_storage = food_storage
+        service.__init__(self, *args)
+
+    def service_print(self):
+        service.food_storage(self)
+        print('Food storage (set): ' + str(self.food_storage)) 
+        
+class Loadingservice(service):
+
+    def __init__(self, frieght_storage, *args):
+        self.frieght_storage = frieght_storage
+        service.__init__(self, *args)
+
+    def service_print(self):
+        service.service_print(self)
+        print('Frieght Storage (Kwh): ' + str(self.frieght_storage)) 
+
+
+class facilities(Refuelservice): 
+
+    def __init__(self,max_number, typ, position, *args):
+        self.max_number = max_number
+        self.typ = typ
+        self.position = position
+        Refuelservice.__init__(self, *args)
