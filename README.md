@@ -1,7 +1,7 @@
 # Simulation of Ground Handling Operations based on Long Beach Airport
 Code hosting for the second project for CSE 6730.  
 
-##Presented by: Jiahao Luo, Hyunjee Jin, Alicia Rossi, Sumana Sen
+##Contributed by: Jiahao Luo, Hyunjee Jin, Alicia Rossi, Sumana Sen
 
 ##Introduction
 In modern days, there is increasing demands on the aircraft industry. Due to the high volume of air traffic demands, airports become congested and delays in the air traffic systems cause delays of flight operations in the airport and the congestions in airspace. Inherent delay uncertainty makes it difficult for airlines and air traffic service providers to manage passengers, fleets and crews efficiently. The unexpected delays also impact the passengers’ comfort level. In addition, increased congestion at busy airports results in significant financial and environmental inefficiencies. [1] 
